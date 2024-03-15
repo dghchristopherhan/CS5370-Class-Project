@@ -1,0 +1,33 @@
+README file for compThresh program
+
+Sharlee Climer
+
+This program computes the expression thresholds corresponding to x% high- 
+and x% low-expression values. The usage can be found by typing 'compThresh' 
+on the command line:
+
+$ ./compThresh 
+
+Fatal: Usage:
+  compThresh input.gex numInd numGenes percent
+
+'input.gex' is the input gene expression data file.  It is assumed
+that there are NUMHEADROWS header rows and NUMHEADCOLS header columns
+in this file (as defined in compThresh.h).  Each gene is represented by a
+row in this input file, and each column represents an individual, time
+step, etc.
+
+
+'numInd' is the number of individuals in the data set and 'numGenes'
+is the number of genes.
+
+'percent' is the percentage of expression values that you desire for 
+labeling as high or low, respectively. For example, if 25 is input, 
+the high- and low-thresholds computed will correspond to values that
+have 25% of the expression values above and below, respectively, and
+50% of the values will be lie between these two values.
+
+
+Please send questions, bugs, and improvements to:
+Sharlee Climer at climer@wustl.edu
+

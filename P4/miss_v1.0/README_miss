@@ -1,0 +1,71 @@
+README for miss.
+
+Release v1.0
+May 2021
+Sharlee Climer
+
+
+'miss' is a program for cleaning data to remove rows/columns with  
+excessive missing values. On each iteration, the user selects the 
+maximum percent missing for rows and columns, then the percent
+missing is updated after removing the rows and columns are removed.
+
+---------------------------------------------------------------------
+
+The usage can be found by typing './miss' on the command line.  
+It follows:
+
+Fatal: Usage:
+
+   miss input.txt numDataRows numDataColumns numHeaderRows numHeaderCols
+
+where 
+
+- 'input.txt' is your data file
+
+- 'numDataRows' is the number of data rows, without counting headers
+
+- 'numDataColumns' is the number of data columns, without counting headers
+
+- 'numHeadRows' is the number of header rows in 'input.txt'
+
+- 'numHeadCols' is the number of header columns in 'input.txt'
+
+---------------------------------------------------------------------
+
+*** Important note about input file: ***
+
+- Each string in the header rows and/or columns must be continuous
+  with no internal white space.
+  
+- Treated as missing values if start with: N, ?, X
+
+- A custom missing symbol can be defined in 'miss.h'
+
+- Program can be used for genotype data with a space between alleles
+  by setting 'SNP_DATA' to 1 in 'miss.h'. (Note that '-' will be treated
+  as missing data when in this mode.)
+
+---------------------------------------------------------------------
+
+Output will be written to a file with the same name as 'input.txt', but
+with the last four characters replaced with 'cleaned.tsv'. This is a
+plain text file with values separated by tabs.
+
+---------------------------------------------------------------------
+
+If LOG_FILE is set to 1 in 'miss.h' (default), a log file with the same name 
+as the input file (minus the last four characters plus '.miss.log') will
+record the choices of each iteration and record the rows and columns removed, 
+relative to the current revision. If the same input file is run more
+than once, the output will be appended to the logfile.
+
+---------------------------------------------------------------------
+
+A small teat file is included and can be run by typing the following:
+
+./miss small_gex.txt 10 10 1 1
+
+---------------------------------------------------------------------
+
+Contact climer@umsl.edu with questions, bug reports, etc.  
