@@ -1,0 +1,6 @@
+./pathway inputFileName numGenes numCases numControls outputFileName 
+
+./geneticRisk synth_1_10D_10N_20G.txt 20 10 10 output_1_10D_10N_20G.txt
+./geneticRisk synth_2_10D_10N_20G.txt 20 10 10 output_2_10D_10N_20G.txt
+./geneticRisk synth_3_10D_10N_20G.txt 20 10 10 output_3_10D_10N_20G.txt
+./geneticRisk synth_4_10D_10N_20G.txt 20 10 10 output_4_10D_10N_20G.txt

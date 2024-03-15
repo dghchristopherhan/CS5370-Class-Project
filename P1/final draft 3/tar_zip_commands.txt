@@ -1,0 +1,2 @@
+tar -cvf pathway_final_draft.tar pathway_final_draft
+gzip pathway_final_draft.tar

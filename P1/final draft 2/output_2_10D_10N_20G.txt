@@ -1,0 +1,11 @@
+Expression Pattern:
+G3	Low
+G20	Low
+
+Cases with Pattern:
+D1	D2	D3	D4	D6	D7	D8	D9	D10	
+
+Controls with Pattern:
+C1	C2	
+
+J = 0.7

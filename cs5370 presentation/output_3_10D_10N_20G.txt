@@ -1,0 +1,14 @@
+Process took 0 seconds
+
+Expression Pattern:
+G8	High
+G17	Low
+G18	Low
+
+Cases with Pattern:
+D1	D2	D3	D4	D6	D8	D9	D10	
+
+Controls with Pattern:
+C2	C5	C8	
+
+J = 0.5
